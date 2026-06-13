@@ -1,0 +1,9 @@
+Django==4.2.13
+PyPDF2
+python-docx
+Pillow
+PyMuPDF
+pytesseract
+google-genai
+gunicorn
+whitenoise

@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: alumni-portal
+    runtime: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn myproject.wsgi:application"
+    envVars:
+      - key: DEBUG
+        value: "False"
+      - key: ALLOWED_HOSTS
+        value: "*"
+      - key: GEMINI_API_KEY
+        sync: false   # Set this manually in Render dashboard
